@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ticket-system-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
+      - key: PORT
+        value: 8080
